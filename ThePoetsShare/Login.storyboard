@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aPJ-1b-daR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="4E7-dy-gb6">
+            <objects>
+                <viewController id="DDl-ZM-3tx" customClass="LoginViewController" customModule="ThePoetsShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6zo-Ub-OMb"/>
+                        <viewControllerLayoutGuide type="bottom" id="UCy-7D-xIZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gHT-Al-9ic">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fq-WS-wdZ">
+                                <rect key="frame" x="16" y="153" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dbT-l9-kW6">
+                                <rect key="frame" x="16" y="214" width="288" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Xu-sv-Zcc">
+                                <rect key="frame" x="16" y="424" width="288" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitClicked:" destination="DDl-ZM-3tx" eventType="touchUpInside" id="QRC-Ha-Bm2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UCy-7D-xIZ" firstAttribute="top" secondItem="0Xu-sv-Zcc" secondAttribute="bottom" constant="114" id="29c-P6-wjL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dbT-l9-kW6" secondAttribute="trailing" id="5cJ-ei-jJa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8fq-WS-wdZ" secondAttribute="trailing" id="DdD-Eo-PcL"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="0Xu-sv-Zcc" secondAttribute="leading" id="Evb-Z4-NaX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dbT-l9-kW6" secondAttribute="leading" id="jj4-vi-mDZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0Xu-sv-Zcc" secondAttribute="trailing" id="pIk-Ox-Pat"/>
+                            <constraint firstItem="dbT-l9-kW6" firstAttribute="top" secondItem="8fq-WS-wdZ" secondAttribute="bottom" constant="31" id="slK-dV-yFE"/>
+                            <constraint firstItem="0Xu-sv-Zcc" firstAttribute="top" secondItem="dbT-l9-kW6" secondAttribute="bottom" constant="180" id="uTZ-6q-XTz"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="8fq-WS-wdZ" secondAttribute="leading" id="vyj-kW-Rrf"/>
+                            <constraint firstItem="8fq-WS-wdZ" firstAttribute="top" secondItem="6zo-Ub-OMb" secondAttribute="bottom" constant="89" id="wZ2-LP-ClB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UvU-8h-AZN"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="passwordText" destination="dbT-l9-kW6" id="wKs-r2-fff"/>
+                        <outlet property="userNameText" destination="8fq-WS-wdZ" id="jNm-UJ-W2H"/>
+                        <segue destination="wYA-tx-bRt" kind="show" identifier="consentSegue" id="mhc-vt-0DE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wpx-0r-bwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="949" y="348"/>
+        </scene>
+        <!--Consent View Controller-->
+        <scene sceneID="sj6-0H-zbM">
+            <objects>
+                <viewController id="wYA-tx-bRt" customClass="ConsentViewController" customModule="ThePoetsShare" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kh7-zR-9ls"/>
+                        <viewControllerLayoutGuide type="bottom" id="faN-BH-nhi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wQS-jf-Qar">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="69L-HZ-UNN">
+                                <rect key="frame" x="0.0" y="72" width="320" height="319"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLf-tx-dWt">
+                                <rect key="frame" x="12" y="439" width="300" height="30"/>
+                                <state key="normal" title="Accept"/>
+                                <connections>
+                                    <action selector="acceptClicked:" destination="wYA-tx-bRt" eventType="touchUpInside" id="EbI-J9-GqM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wG-zJ-RmQ">
+                                <rect key="frame" x="16" y="477" width="288" height="30"/>
+                                <state key="normal" title="Decline"/>
+                                <connections>
+                                    <action selector="declineClicked:" destination="wYA-tx-bRt" eventType="touchUpInside" id="Ju8-cq-XqT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="faN-BH-nhi" firstAttribute="top" secondItem="4wG-zJ-RmQ" secondAttribute="bottom" constant="61" id="4qr-32-K5H"/>
+                            <constraint firstItem="mLf-tx-dWt" firstAttribute="leading" secondItem="wQS-jf-Qar" secondAttribute="leadingMargin" constant="-4" id="5ep-Eo-4BK"/>
+                            <constraint firstItem="69L-HZ-UNN" firstAttribute="leading" secondItem="wQS-jf-Qar" secondAttribute="leadingMargin" constant="-20" id="6AO-Vj-80P"/>
+                            <constraint firstItem="mLf-tx-dWt" firstAttribute="top" secondItem="69L-HZ-UNN" secondAttribute="bottom" constant="48" id="KAb-5x-xSy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mLf-tx-dWt" secondAttribute="trailing" constant="-8" id="NjZ-dN-mWE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="69L-HZ-UNN" secondAttribute="trailing" constant="-20" id="NvS-hP-MnC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4wG-zJ-RmQ" secondAttribute="trailing" id="RNg-Ya-9Ci"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="4wG-zJ-RmQ" secondAttribute="leading" id="UGg-NZ-IKn"/>
+                            <constraint firstItem="4wG-zJ-RmQ" firstAttribute="top" secondItem="mLf-tx-dWt" secondAttribute="bottom" constant="8" id="agQ-kb-DZ9"/>
+                            <constraint firstItem="69L-HZ-UNN" firstAttribute="top" secondItem="Kh7-zR-9ls" secondAttribute="bottom" constant="8" id="hUL-Cj-jq0"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="acceptButton" destination="mLf-tx-dWt" id="4JB-e7-3Et"/>
+                        <outlet property="declineButton" destination="4wG-zJ-RmQ" id="whY-PL-B5d"/>
+                        <outlet property="webView" destination="69L-HZ-UNN" id="InV-1K-3U8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83q-Ua-WC6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1309" y="348"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tI1-Th-9qM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aPJ-1b-daR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zlO-Ni-MKx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DDl-ZM-3tx" kind="relationship" relationship="rootViewController" id="WHD-kV-dKT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkK-cd-sfq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="348"/>
+        </scene>
+    </scenes>
+</document>
