@@ -17,6 +17,7 @@
 		D2D63EEC1D35D1F700EA6BF6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63EEB1D35D1F700EA6BF6 /* LoginViewController.swift */; };
 		D2D63EEE1D35D25E00EA6BF6 /* ConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63EED1D35D25E00EA6BF6 /* ConsentViewController.swift */; };
 		D2D63EF01D35D72000EA6BF6 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63EEF1D35D72000EA6BF6 /* FeedViewController.swift */; };
+		D2D63EF21D3720CF00EA6BF6 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D63EF11D3720CF00EA6BF6 /* WriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D2D63EEB1D35D1F700EA6BF6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D2D63EED1D35D25E00EA6BF6 /* ConsentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentViewController.swift; sourceTree = "<group>"; };
 		D2D63EEF1D35D72000EA6BF6 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		D2D63EF11D3720CF00EA6BF6 /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				D2D63EEB1D35D1F700EA6BF6 /* LoginViewController.swift */,
 				D2D63EED1D35D25E00EA6BF6 /* ConsentViewController.swift */,
 				D2D63EEF1D35D72000EA6BF6 /* FeedViewController.swift */,
+				D2D63EF11D3720CF00EA6BF6 /* WriteViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -309,6 +312,7 @@
 				D2D63EEC1D35D1F700EA6BF6 /* LoginViewController.swift in Sources */,
 				D2D63EB71D35CF3300EA6BF6 /* AppDelegate.swift in Sources */,
 				D2D63EF01D35D72000EA6BF6 /* FeedViewController.swift in Sources */,
+				D2D63EF21D3720CF00EA6BF6 /* WriteViewController.swift in Sources */,
 				D2D63EEE1D35D25E00EA6BF6 /* ConsentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +542,7 @@
 				D2D63EDD1D35CF3300EA6BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2D63EDE1D35CF3300EA6BF6 /* Build configuration list for PBXNativeTarget "ThePoetsShareTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +551,7 @@
 				D2D63EE01D35CF3300EA6BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2D63EE11D35CF3300EA6BF6 /* Build configuration list for PBXNativeTarget "ThePoetsShareUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +560,7 @@
 				D2D63EE31D35CF3300EA6BF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
